@@ -1,0 +1,420 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+/* root source */
+:root {
+    --bg-color: #e5e5e5;
+    --body-color: #ffffff;
+    --body-span-color: #d1b06b;
+    --body-button-color: #1f2732;
+    --body-font-family: "Cormorant Garamond";
+}
+
+/* global style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--body-color);
+    background-color: var(--bg-color);
+    font-family: var(--body-font-family);
+    /* test color */
+    background-color: rgb(85, 85, 85);
+}
+
+.full {
+    width: 1500px;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* display flex and grid */
+.full .flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.full .grid {
+    display: grid;
+}
+
+
+/* -------------------------------------------------------------header global style------------------------------------------------------------- */
+.full header {
+    width: 100%;
+    height: 978px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: color-dodge;
+    background: rgba(31, 39, 50, 0.81);
+    background-image: url("images/header-background.png");
+}
+
+.full header nav {
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.full header nav .logo img {
+    width: 20%;
+    margin-left: 2.5%;
+}
+
+.full header nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.full header nav .text-align {
+    width: 95%;
+    height: 1px;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #4e555f;
+}
+
+.full header nav .logo .logo-text {
+    width: 23%;
+    height: 85px;
+    display: flex;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 2.5%;
+    border-radius: 0px;
+    font-family: Outfit;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.4000000059604645px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.full header nav .navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.full header nav .navbar-links ul {
+    display: flex;
+    margin-top: 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.full header nav .navbar-links ul li {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 50px;
+    line-height: 35px;
+    font-style: normal;
+    font-family: "Outfit";
+    letter-spacing: 0.4px;
+    list-style-type: none;
+    color: var(--body-color);
+}
+
+.full header nav .navbar-links .span {
+    color: #d1b06b;
+}
+
+.full header nav .navbar-links .connect {
+    margin-right: 2.3%;
+}
+
+.full header nav .navbar-links .connect,
+.tel,
+.mail {
+    display: flex;
+    margin-top: 1%;
+    align-items: center;
+    font-family: "Outfit";
+    justify-content: center;
+}
+
+.full header nav .navbar-links .connect,
+.tel-text,
+.mail-text {
+    font-size: 15px;
+    text-align: left;
+    line-height: 29px;
+    margin-right: 20px;
+    font-family: "Outfit";
+    letter-spacing: 0.4000000059604645px;
+}
+
+.full header nav .connect * {
+    margin-left: 10px;
+}
+
+.full header nav .navbar-links .connect,
+.tel-text h2,
+.mail-text h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    font-family: "Outfit";
+    letter-spacing: 0.4000000059604645px;
+}
+
+.full header nav .navbar-links .tel {
+    margin-right: 6%;
+}
+
+.full header .header-main-content {
+    display: flex;
+    height: 710px;
+    margin-top: 10%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.full header .header-main-content img {
+    height: 105%;
+    width: 700px;
+}
+
+.full header .header-main-content .header-main-text {
+    width: 45%;
+}
+
+.full header .header-main-content .header-main-text img {
+    width: 95px;
+    height: 44px;
+}
+
+.full header .header-main-content .header-main-text h1 {
+    font-family: "Cormorant Garamond";
+    letter-spacing: 0.4px;
+    font-style: normal;
+    line-height: 78px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 65px;
+}
+
+.full header .header-main-content .header-main-text p {
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 40px;
+    font-style: normal;
+    font-family: "Outfit";
+    letter-spacing: 0.4px;
+    color: var(--body-span-color);
+}
+
+.full header .header-main-content .header-main-text button {
+    border: 1px solid var(--body-span-color);
+    background: var(--body-span-color);
+    color: var(--body-button-color);
+    letter-spacing: 0.4px;
+    font-family: "Outfit";
+    text-align: center;
+    line-height: 35px;
+    font-weight: 400;
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: 5%;
+    height: 85px;
+    width: 269px;
+}
+
+
+/* -------------------------------------------------------------lawyer global style------------------------------------------------------------- */
+.full .lawyer {
+    width: 100%;
+    height: 100vh;
+    background-color: #161D27;
+}
+
+.full .lawyer .lawyer-images img {
+    margin-top: 5%;
+}
+
+.full .lawyer .lawyer-text {
+    width: 830px;
+    font-family: Cormorant Garamond;
+}
+
+.full .lawyer-text h2 {
+    font-size: 45px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 59px;
+    letter-spacing: 0.4px;
+}
+
+.full .lawyer .lawyer-text * {
+    margin-top: 2.5%;
+    font-weight: 100;
+}
+
+.full .lawyer-text p {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 32px;
+    font-family: Outfit;
+    letter-spacing: 0.4000000059604645px;
+}
+
+.full .lawyer .lawyer-text .flex-box {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.full .lawyer-text .flex-box h1 {
+    margin-left: 20px;
+}
+
+
+/* -------------------------------------------------------------explore global style------------------------------------------------------------- */
+.full .explore {
+    width: 100%;
+    height: 1400px;
+    background-color: #161D27;
+}
+
+.full .explore .flex-box {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    justify-content: space-between;
+}
+
+.full .explore .top-text p {
+    width: 44%;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 100;
+    line-height: 32px;
+    font-family: Outfit;
+    letter-spacing: 0.4000000059604645px;
+}
+
+.full .explore .top-text h1 {
+    font-size: 45px;
+    font-weight: 100;
+    text-align: left;
+    line-height: 59px;
+    margin-bottom: 30px;
+    letter-spacing: 0.4px;
+    font-family: Cormorant Garamond;
+
+}
+
+.full .explore .explore-boxes {
+    display: flex;
+    width: 100%;
+    height: 800px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.full .explore .explore-boxes .box {
+    width: 430px;
+    height: 429px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 0px;
+    border: 1px solid black;
+    background-color: #1f2732;
+}
+
+.full .explore .explore-boxes .box * {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full .explore .explore-boxes .box h1 {
+    width: 70%;
+    font-size: 35px;
+    margin-top: 55px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 56px;
+    font-family: Cormorant Garamond;
+    letter-spacing: 0.4000000059604645px;
+}
+
+.full .explore .explore-boxes .box p {
+    width: 70%;
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Outfit;
+    letter-spacing: 0.4000000059604645px;
+}
+
+.full .explore .explore-boxes .box .flex-box {
+    padding: 0;
+    width: 340px;
+    margin-top: 37px;
+    margin-top: 15% !important;
+    justify-content: space-between;
+}
+
+.full .explore .explore-boxes .box .flex-box button {
+    width: 187px;
+    height: 58px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    text-align: center;
+    font-family: Outfit;
+    background: #161D27;
+    color: var(--body-color);
+    letter-spacing: 0.4000000059604645px;
+}
+
+.full .explore .explore-boxes .box hr {
+    width: 70%;
+    margin-top: 8%;
+    color: gray !important;
+    background-color: gray !important;
+}
+
+
+/* -------------------------------------------------------------deserve global style------------------------------------------------------------- */
+.full .deserve{
+    width: 100%;
+    height: 720px;
+    color: black;
+    background-color: #FFFFFF;
+}
+.full .deserve *{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.full .deserve h1{
+    width: 402px;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+    font-family: Cormorant Garamond;
+    letter-spacing: 0.4000000059604645px;
+}
